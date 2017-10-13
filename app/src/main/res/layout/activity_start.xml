@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Chatty"
+        android:textSize="25dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="174dp" />
+
+    <Button
+        android:id="@+id/registerNew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Need a New Account?"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/colorAccent"
+        android:textColor="#FFFFFF"
+        android:textSize="19dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:padding="12dp"/>
+
+    <Button
+        android:id="@+id/loginExisting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:text="Login to Existing Account"
+        android:textSize="18dp"
+        android:backgroundTint="#FFFFFF"
+        android:textColor="@color/colorPrimary"
+        android:textAllCaps="false"
+        android:padding="12dp"
+        android:layout_below="@+id/registerNew"
+        android:layout_alignLeft="@+id/registerNew"
+        android:layout_alignStart="@+id/registerNew"
+        android:layout_alignRight="@+id/registerNew"
+        android:layout_alignEnd="@+id/registerNew" />
+</RelativeLayout>

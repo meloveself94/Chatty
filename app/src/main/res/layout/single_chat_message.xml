@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="14dp"
+    android:background="#BDBDBD"
+    android:id="@+id/single_chat_layout">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/defaultavatar"
+        android:id="@+id/single_avatar"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/single_avatar"
+        android:layout_alignTop="@id/single_avatar"
+        android:text="Display Name"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:id="@+id/single_display_name"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/single_left_box"
+        android:layout_toRightOf="@id/single_avatar"
+        android:layout_alignBottom="@id/single_avatar"
+        android:text="Hello James, How are you?"
+        android:background="#FFFFFF"
+        android:textColor="#424242"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:padding="6dp"
+
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/single_display_name"
+        android:layout_alignTop="@id/single_avatar"
+        android:text="00:00"
+        android:textColor="#757575"
+        android:textSize="15sp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:id="@+id/single_message_time"/>
+
+</RelativeLayout>

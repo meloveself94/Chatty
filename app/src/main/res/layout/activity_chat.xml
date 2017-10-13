@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cccccc">
+
+
+    <include layout="@layout/app_bar_layout"
+        android:id="@+id/chat_app_bar" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/chat_app_bar"
+        android:id="@+id/swipe_message_layout">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/chat_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/linearLayout"
+            android:layout_below="@+id/chat_app_bar">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:weightSum="10"
+        android:background="#FFFFFF"
+        android:id="@+id/linearLayout">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_add_black_24dp"
+            android:id="@+id/chat_add"
+            android:backgroundTint="#FFFFFF"
+            android:layout_weight="1"/>
+
+        <EditText
+
+            android:id="@+id/chat_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:hint="  Enter Message... "
+            android:padding="5dp"
+            android:background="@android:color/transparent"
+            android:textSize="15sp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_send_black_24dp"
+            android:layout_weight="1"
+            android:id="@+id/chat_send"
+            android:backgroundTint="#FFFFFF"
+            />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+
